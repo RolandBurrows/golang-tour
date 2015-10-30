@@ -1,2 +1,6 @@
-# golang-tour
-Archived notes of my Go learnings via https://tour.golang.org/list
+# Roland Learns Go
+Via https://tour.golang.org/list
+
+### Progress Chart
+| Exercise | Topic | Grok Hours | Notes |
+|:--------:|:-----:|:----------:|:-----:|

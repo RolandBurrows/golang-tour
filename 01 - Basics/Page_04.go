@@ -4,8 +4,8 @@ package main
 
 import "fmt"
 
-func add(x int, y int) int {
-	return x + y
+func add(x int, y int) int {   // add(x, y int) is also valid, When two or more consecutive
+	return x + y			   // named function parameters share a type
 }
 
 func main() {

@@ -6,3 +6,4 @@ Via https://tour.golang.org/list
 |:------:|:-----:|:----------:|:-----:|
 | Welcome | Intro Concepts | 0.25 | [Notes](00%20-%20Welcome) |
 | Basics | Imports<br>Exports<br>Functions<br>Returns<br>Variables<br>Types<br>Constants | 3.75 | [Notes](01%20-%20Basics) |
+| Flow Control | For<br>If<br>Switch<br>Defer | 2.75 | [Notes](02%20-%20Flow%20Control) |

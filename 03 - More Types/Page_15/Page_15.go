@@ -5,7 +5,11 @@ package main
 import "golang.org/x/tour/pic"
 
 func Pic(dx, dy int) [][]uint8 {
-	// Failure point
+	proc := make([][]uint8, dy)
+	for i := 0; i < dy; i++ {
+		proc[i] = make([]uint8, dx)
+	}
+	return proc
 }
 
 func main() {

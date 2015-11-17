@@ -9,7 +9,7 @@ func Pic(dx, dy int) [][]uint8 {
 	for i := 0; i < dy; i++ {
 		proc[i] = make([]uint8, dx)
 		for j := 0; j < dx; j++ {
-			proc[i][j] = uint8(i*j)
+			proc[i][j] = uint8(i^j)
 		}
 	}
 	return proc
@@ -22,4 +22,4 @@ func main() {
 
 // -- Results --
 
-// Image of i*j in same folder
+// Image of i^j in same folder

@@ -8,6 +8,9 @@ func Pic(dx, dy int) [][]uint8 {
 	proc := make([][]uint8, dy)
 	for i := 0; i < dy; i++ {
 		proc[i] = make([]uint8, dx)
+		for j := 0; j < dx; j++ {
+			proc[i][j] = uint8(i*j)
+		}
 	}
 	return proc
 }
@@ -19,6 +22,4 @@ func main() {
 
 // -- Results --
 
-// prog.go:6: missing return at end of function
-
-// Program exited.
+// Image of i*j in same folder

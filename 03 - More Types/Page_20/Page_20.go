@@ -4,10 +4,17 @@ package main
 
 import (
 	"golang.org/x/tour/wc"
+	"strings"
 )
 
 func WordCount(s string) map[string]int {
-	return map[string]int{"x": 1}
+	fieldz := strings.Fields(s)
+	numz := len(fieldz)
+	mapz := make(map[string]int)
+	for y := 0; y < numz; y++ {
+		(mapz[fieldz[y]])++
+	}
+	return mapz
 }
 
 func main() {
@@ -17,9 +24,16 @@ func main() {
 
 // -- Results --
 
-// FAIL
-//  f("I am learning Go!") =
-//   map[string]int{"x":1}
-//  want:
-//   map[string]int{"Go!":1, "I":1, "am":1, "learning":1}
-// Program exited.
+// PASS
+//  f("I am learning Go!") = 
+//   map[string]int{"I":1, "am":1, "learning":1, "Go!":1}
+// PASS
+//  f("The quick brown fox jumped over the lazy dog.") = 
+//   map[string]int{"The":1, "fox":1, "lazy":1, "over":1, "the":1, "dog.":1, "quick":1, "brown":1, "jumped":1}
+// PASS
+//  f("I ate a donut. Then I ate another donut.") = 
+//   map[string]int{"donut.":2, "Then":1, "another":1, "I":2, "ate":2, "a":1}
+// PASS
+//  f("A man a plan a canal panama.") = 
+//   map[string]int{"a":2, "plan":1, "canal":1, "panama.":1, "A":1, "man":1}
+

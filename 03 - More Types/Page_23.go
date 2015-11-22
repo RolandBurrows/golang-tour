@@ -4,10 +4,17 @@ package main
 
 import "fmt"
 
-// fibonacci is a function that returns
-// a function that returns an int.
 func fibonacci() func() int {
-}										// Fails here
+	a := 0
+	b := 1
+	return func() int {
+		c := a
+		d := b
+		a = d
+		b = c + d
+		return a
+	}
+}
 
 func main() {
 	f := fibonacci()
@@ -19,6 +26,15 @@ func main() {
 
 // -- Results --
 
-// prog.go:8: missing return at end of function
+// 1
+// 1
+// 2
+// 3
+// 5
+// 8
+// 13
+// 21
+// 34
+// 55
 
 // Program exited.

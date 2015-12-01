@@ -6,7 +6,13 @@ import "golang.org/x/tour/reader"
 
 type MyReader struct{}
 
-// TODO: Add a Read([]byte) (int, error) method to MyReader.
+func (MyReader) Read(output []byte) (int, error) {
+    length := len(output)
+    for i := 0; i < length; i++ {
+        output[i] = 'A'
+    }
+    return length, nil
+}
 
 func main() {
 	reader.Validate(MyReader{})
@@ -15,7 +21,6 @@ func main() {
 
 // -- Results --
 
-// prog.go:10: cannot use MyReader literal (type MyReader) as type io.Reader in argument to reader.Validate:
-// 	MyReader does not implement io.Reader (missing Read method)
+// OK!
 
 // Program exited.

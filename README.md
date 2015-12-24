@@ -9,3 +9,4 @@ Via https://tour.golang.org/list
 | Flow Control | For, If, Switch, Defer | 2.75 | [Notes](02%20-%20Flow%20Control) |
 | More Types | Structs, Arrays, Slices, Range, Maps, Closures | 3.00 | [Notes](03%20-%20More%20Types) |
 | Methods | Methods, Pointers, Interfaces, Stringers, Errors, Readers, Handlers | 4.50 | [Notes](04%20-%20Methods) |
+| Concurrency | Goroutines, Channels (Buffering, Range, Close), Select, Default | 2.25 | [Notes](05%20-%20Concurrency) |

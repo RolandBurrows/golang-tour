@@ -10,3 +10,8 @@ Via https://tour.golang.org/list
 | More Types | Structs, Arrays, Slices, Range, Maps, Closures | 3.00 | [Notes](03%20-%20More%20Types) |
 | Methods | Methods, Pointers, Interfaces, Stringers, Errors, Readers, Handlers | 4.50 | [Notes](04%20-%20Methods) |
 | Concurrency | Goroutines, Channels (Buffering, Range, Close), Select, Default | 2.25 | [Notes](05%20-%20Concurrency) |
+
+### Final Stats
+| Started | Completed | Total Grok Hours |
+|:-------:|:---------:|:----------------:|
+| 10-29-2015 | 12-24-2015 | 16.50 |
